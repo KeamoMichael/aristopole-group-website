@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aristopole Group DRC SARL — Fueling Sustainability in Africa</title>
+  <meta name="description" content="Aristopole Group is a strategic supply partner based in the DRC, providing world-class supply chain management, mining equipment, industrial supplies and logistics across Africa." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════
+     NAVBAR  — logo left, plain links right, no button
+════════════════════════════════════════════════ -->
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <div class="nav-inner">
+      <a href="#home" aria-label="Aristopole Group home">
+        <img class="nav-logo" src="../Aristopole Asset Library/Aristopole_ Logo_ Revamp_Color.jpg" alt="Aristopole Group" style="height:38px;width:auto;object-fit:contain;" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li><a href="sustainability.html">Sustainability</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a class="nav-cta" href="contact.html">Request a Quote</a>
+      <button class="nav-burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<nav class="nav-drawer" id="drawer">
+  <a href="services.html"       onclick="closeDrawer()">Services</a>
+  <a href="products.html"       onclick="closeDrawer()">Products</a>
+  <a href="partners.html"       onclick="closeDrawer()">Partners</a>
+  <a href="sustainability.html" onclick="closeDrawer()">Sustainability</a>
+  <a href="careers.html"        onclick="closeDrawer()">Careers</a>
+  <a href="about.html"          onclick="closeDrawer()">About</a>
+  <a href="contact.html"        onclick="closeDrawer()">Contact</a>
+  <a href="contact.html" class="mob-cta" onclick="closeDrawer()">Request a Quote</a>
+</nav>
+
+
+<!-- ════════════════════════════════════════════════
+     HERO  — ~58vh, image bg, text pinned bottom-left
+════════════════════════════════════════════════ -->
+<div class="hero" id="home">
+  <div class="hero-img">
+    <img src="../Aristopole Asset Library/hero-image.jpg" alt="Aristopole supply logistics" loading="eager" />
+  </div>
+  <div class="hero-grad"></div>
+
+  <div class="hero-copy">
+    <div class="wrap">
+      <div class="hero-copy-inner rv">
+        <h1 class="hero-h1">
+          The new standard for supply chain<br />
+          and industrial procurement.
+        </h1>
+        <p class="hero-sub">
+          Fueling sustainability across Africa through world-class logistics,
+          mining equipment and industrial supplies.
+        </p>
+        <a href="#services" class="hero-btn">
+          View our services
+          <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════════════
+     STATEMENT  — white, big headline left + diagram right
+     then 3-col stats row below
+════════════════════════════════════════════════ -->
+<section class="statement" id="about">
+  <div class="wrap">
+
+    <div class="statement-top">
+      <div class="rv-l">
+        <h2 class="stmt-h">
+          Advancing regional trade<br />
+          through world-class supply<br />
+          chain management.
+        </h2>
+        <p class="stmt-body">
+          Our cutting-edge procurement capabilities ensure reliable supply,
+          reduced lead times and improved operational performance for your
+          business across the DRC and Africa.
+        </p>
+      </div>
+
+      <!-- Decorative technical/schematic diagram — right column -->
+      <div class="stmt-diagram rv-r">
+        <svg viewBox="0 0 480 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Main pipeline horizontal -->
+          <path d="M40 160 L440 160" stroke="#0FBECE" stroke-width="2" stroke-dasharray="8 4" opacity="0.4"/>
+          <!-- Vertical branches -->
+          <path d="M120 160 L120 60" stroke="#0FBECE" stroke-width="1.5" opacity="0.35"/>
+          <path d="M240 160 L240 80" stroke="#0FBECE" stroke-width="1.5" opacity="0.35"/>
+          <path d="M360 160 L360 60" stroke="#0FBECE" stroke-width="1.5" opacity="0.35"/>
+          <!-- Down branches -->
+          <path d="M160 160 L160 260" stroke="#0FBECE" stroke-width="1.5" opacity="0.25"/>
+          <path d="M310 160 L310 240" stroke="#0FBECE" stroke-width="1.5" opacity="0.25"/>
+          <!-- Boxes / nodes -->
+          <rect x="96" y="36" width="48" height="30" rx="4" stroke="#0FBECE" stroke-width="1.5" opacity="0.5"/>
+          <rect x="216" y="56" width="48" height="30" rx="4" stroke="#0FBECE" stroke-width="1.5" opacity="0.5"/>
+          <rect x="336" y="36" width="48" height="30" rx="4" stroke="#0FBECE" stroke-width="1.5" opacity="0.5"/>
+          <rect x="136" y="244" width="48" height="30" rx="4" stroke="#0FBECE" stroke-width="1.5" opacity="0.35"/>
+          <rect x="286" y="224" width="48" height="30" rx="4" stroke="#0FBECE" stroke-width="1.5" opacity="0.35"/>
+          <!-- Circles at junctions -->
+          <circle cx="120" cy="160" r="5" fill="#0FBECE" opacity="0.5"/>
+          <circle cx="240" cy="160" r="5" fill="#0FBECE" opacity="0.5"/>
+          <circle cx="360" cy="160" r="5" fill="#0FBECE" opacity="0.5"/>
+          <circle cx="160" cy="160" r="3" fill="#0FBECE" opacity="0.35"/>
+          <circle cx="310" cy="160" r="3" fill="#0FBECE" opacity="0.35"/>
+          <!-- Small dots along main line -->
+          <circle cx="40"  cy="160" r="3" fill="#0FBECE" opacity="0.3"/>
+          <circle cx="440" cy="160" r="3" fill="#0FBECE" opacity="0.3"/>
+          <!-- Labels inside boxes (small rects) -->
+          <rect x="104" y="44" width="32" height="4" rx="2" fill="#0FBECE" opacity="0.3"/>
+          <rect x="104" y="52" width="22" height="4" rx="2" fill="#0FBECE" opacity="0.2"/>
+          <rect x="224" y="64" width="32" height="4" rx="2" fill="#0FBECE" opacity="0.3"/>
+          <rect x="224" y="72" width="22" height="4" rx="2" fill="#0FBECE" opacity="0.2"/>
+          <rect x="344" y="44" width="32" height="4" rx="2" fill="#0FBECE" opacity="0.3"/>
+          <rect x="344" y="52" width="22" height="4" rx="2" fill="#0FBECE" opacity="0.2"/>
+          <!-- Curved connectors -->
+          <path d="M160 260 Q180 290 200 270" stroke="#0FBECE" stroke-width="1" opacity="0.2" fill="none"/>
+          <path d="M80 160 Q80 120 100 100" stroke="#0FBECE" stroke-width="1" opacity="0.15" fill="none"/>
+          <!-- Arrow at end of main pipeline -->
+          <polyline points="430,154 440,160 430,166" stroke="#0FBECE" stroke-width="1.5" opacity="0.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Stats row -->
+    <div class="stats-row hero-stats">
+      <div class="stat-cell rv d1">
+        <div class="stat-num"><span class="counter" data-target="10">0</span><sup>+</sup></div>
+        <div class="stat-label">years of experience</div>
+        <div class="stat-desc">Our team has the expertise and knowledge to provide the perfect supply solution for your unique needs.</div>
+      </div>
+      <div class="stat-cell rv d2">
+        <div class="stat-num"><span class="counter" data-target="50">0</span><sup>+</sup></div>
+        <div class="stat-label">global partners</div>
+        <div class="stat-desc">Reducing supply chain gaps across businesses while contributing to greater, more sustainable operations in Africa.</div>
+      </div>
+      <div class="stat-cell rv d3">
+        <div class="stat-num"><span class="counter" data-target="5">0</span></div>
+        <div class="stat-label">key sectors served</div>
+        <div class="stat-desc">Businesses across mining, energy, agriculture and construction have benefited from our reliable supply solutions.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     PARTNERS STRIP  — auto-scrolling marquee
+════════════════════════════════════════════════ -->
+<div class="partners-strip" id="partners">
+  <div class="wrap">
+  <div class="ps-label">A few companies we partner solutions for</div>
+  <div class="ps-track">
+    <!-- Items duplicated so the loop is seamless -->
+    <div class="ps-logos">
+      <img class="ps-img" src="../Aristopol_Partner_Logos/UVSS_Logo.png" alt="UVSS" loading="lazy" />
+      <img class="ps-img" src="../Aristopole Asset Library/img130.jpg" alt="Zhongxin Heavy Industry" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/Shiptech_logo.jpg" alt="Shiptech" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/Pamwe_Mining_Services_Logo.jpg" alt="Pamwe Mining Services" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/ACTOM_Logo02.jpg" alt="ACTOM" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/GNK-Logo.jpg" alt="GNK Valves" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/NJR_Steel_Logo.png" alt="NJR Steel" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/Macsteel Logo.jpg" alt="Macsteel Exports" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/Morris Logo.jpg" alt="Morris" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/Sky Enterprise_Logo.jpg" alt="Sky Enterprise" loading="lazy" />
+      <!-- duplicate set -->
+      <img class="ps-img" src="../Aristopol_Partner_Logos/UVSS_Logo.png" alt="UVSS" loading="lazy" />
+      <img class="ps-img" src="../Aristopole Asset Library/img130.jpg" alt="Zhongxin Heavy Industry" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/Shiptech_logo.jpg" alt="Shiptech" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/Pamwe_Mining_Services_Logo.jpg" alt="Pamwe Mining Services" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/ACTOM_Logo02.jpg" alt="ACTOM" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/GNK-Logo.jpg" alt="GNK Valves" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/NJR_Steel_Logo.png" alt="NJR Steel" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/Macsteel Logo.jpg" alt="Macsteel Exports" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/Morris Logo.jpg" alt="Morris" loading="lazy" />
+      <img class="ps-img" src="../Aristopol_Partner_Logos/Sky Enterprise_Logo.jpg" alt="Sky Enterprise" loading="lazy" />
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════════════
+     WHY CHOOSE  — left: 2-line headline, right: feature rows
+════════════════════════════════════════════════ -->
+<section class="why">
+  <div class="wrap">
+    <div class="why-wrap">
+
+      <div class="why-headline rv-l">
+        <span class="why-h-line1">Why choose</span>
+        <span class="why-h-line2">Aristopole Group.</span>
+      </div>
+
+      <div class="why-features rv-r">
+
+        <div class="why-feat d1">
+          <div class="wf-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          </div>
+          <div class="wf-title">Regional Presence</div>
+          <div class="wf-desc">We don't believe in a one-size-fits-all approach to supply chain. We work closely with our customers to understand their needs and deliver solutions that fit their unique requirements — from Kinshasa to Lubumbashi.</div>
+        </div>
+
+        <div class="why-feat d2">
+          <div class="wf-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div class="wf-title">International Reach</div>
+          <div class="wf-desc">We bring you cutting-edge supply solutions that incorporate the latest global standards, technologies and partner relationships — delivered reliably to Africa's most demanding markets.</div>
+        </div>
+
+        <div class="why-feat d3">
+          <div class="wf-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="wf-title">Proven Integrity</div>
+          <div class="wf-desc">With over a decade of trading experience, our resilient balance sheet and established partner network ensure your supply chain stays reliable, compliant and competitive.</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════════════ -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-label">What We Do</div>
+      <h2 class="sec-title">Our Services</h2>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card rv d1">
+        <div class="svc-img"><img src="../Aristopole Asset Library/img83.jpg" alt="Supply Chain" loading="lazy" /></div>
+        <div class="svc-body">
+          <div class="svc-tag">Logistics</div>
+          <div class="svc-title">Supply Chain &amp; Logistics</div>
+          <div class="svc-desc">End-to-end procurement, warehousing, customs clearing and last-mile forwarding throughout the DRC and beyond.</div>
+        </div>
+      </div>
+
+      <div class="svc-card rv d2">
+        <div class="svc-img"><img src="../Aristopole Asset Library/img85.jpg" alt="Mining Equipment" loading="lazy" /></div>
+        <div class="svc-body">
+          <div class="svc-tag">Mining</div>
+          <div class="svc-title">Mining Equipment &amp; Spares</div>
+          <div class="svc-desc">Specialised underground and surface mining machinery, spare parts and consumables from leading global OEM partners.</div>
+        </div>
+      </div>
+
+      <div class="svc-card rv d3">
+        <div class="svc-img"><img src="../Aristopole Asset Library/img91.jpg" alt="Industrial Supplies" loading="lazy" /></div>
+        <div class="svc-body">
+          <div class="svc-tag">Industrial</div>
+          <div class="svc-title">Industrial &amp; Hydraulic Supplies</div>
+          <div class="svc-desc">Pumps, hydraulic systems and industrial hardware from Grundfos, HYDAC, Solopump, HUCK and TLP.</div>
+        </div>
+      </div>
+
+      <div class="svc-card rv d1">
+        <div class="svc-img"><img src="../Aristopole Asset Library/img92.jpg" alt="Stone Production" loading="lazy" /></div>
+        <div class="svc-body">
+          <div class="svc-tag">Construction</div>
+          <div class="svc-title">Stone Production Equipment</div>
+          <div class="svc-desc">XHP hydraulic cone crushers, jaw crushers and complete production lines from Zhongxin Heavy Industry.</div>
+        </div>
+      </div>
+
+      <div class="svc-card rv d2">
+        <div class="svc-img"><img src="../Aristopole Asset Library/img96.jpg" alt="Petroleum" loading="lazy" /></div>
+        <div class="svc-body">
+          <div class="svc-tag">Energy — Shiptech</div>
+          <div class="svc-title">Petroleum Products</div>
+          <div class="svc-desc">Supply of petroleum and fuel products throughout the DRC in strategic partnership with Shiptech.</div>
+        </div>
+      </div>
+
+      <div class="svc-card rv d3">
+        <div class="svc-img"><img src="../Aristopole Asset Library/img93.jpg" alt="Aftermarket Services" loading="lazy" /></div>
+        <div class="svc-body">
+          <div class="svc-tag">Aftermarket — Pamwe Mining</div>
+          <div class="svc-title">Aftermarket Mining Services</div>
+          <div class="svc-desc">Maintenance, repair and aftermarket support for underground trackless equipment with Pamwe Mining Services.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     PRODUCTS  — image left, list right
+════════════════════════════════════════════════ -->
+<section class="split-sec" id="products">
+  <div class="wrap">
+    <div class="split-grid">
+      <div class="split-img rv-l">
+        <img src="../Aristopole Asset Library/img200.jpg" alt="Steel coils" loading="lazy" />
+        <div class="split-badge">
+          <strong>6</strong>
+          <span>Product categories</span>
+        </div>
+      </div>
+      <div class="split-text rv-r">
+        <div class="sec-label">Product Range</div>
+        <h2 class="sec-title">What We Supply</h2>
+        <p>From hydraulic systems and agricultural machinery to mining chemicals and trackless underground equipment — Aristopole Group sources and delivers the full product spectrum your operations require.</p>
+        <ul class="prod-list">
+          <li class="prod-row">
+            <div class="p-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg></div>
+            <span class="p-name">Hydraulic &amp; Pumping Systems</span>
+            <div class="p-arr"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          </li>
+          <li class="prod-row">
+            <div class="p-ico"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></div>
+            <span class="p-name">Mining Chemicals</span>
+            <div class="p-arr"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          </li>
+          <li class="prod-row">
+            <div class="p-ico"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+            <span class="p-name">Agricultural Equipment</span>
+            <div class="p-arr"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          </li>
+          <li class="prod-row">
+            <div class="p-ico"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+            <span class="p-name">Construction Machinery</span>
+            <div class="p-arr"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          </li>
+          <li class="prod-row">
+            <div class="p-ico"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+            <span class="p-name">Steel &amp; Industrial Materials</span>
+            <div class="p-arr"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          </li>
+          <li class="prod-row">
+            <div class="p-ico"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+            <span class="p-name">Underground Trackless Equipment</span>
+            <div class="p-arr"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     ABOUT  — text left, image right
+════════════════════════════════════════════════ -->
+<section class="split-sec alt" id="company">
+  <div class="wrap">
+    <div class="split-grid">
+      <div class="split-text rv-l">
+        <div class="sec-label">Who We Are</div>
+        <h2 class="sec-title">About Aristopole Group</h2>
+        <p>Aristopole Group DRC SARL is Africa's leading trading, procurement and supply company, delivering world-class supply chain management to clients across the mining, energy, agriculture and construction sectors.</p>
+        <p>Registered in the DRC with offices in Lubumbashi and Kinshasa, our international management team brings extensive market experience and deep regional networks.</p>
+        <blockquote class="blockquote">
+          "To provide essential value to your supply chain in order to advance and overcome the obstacles of doing regional trade."
+          <cite>— Aristopole Group Mission Statement</cite>
+        </blockquote>
+        <div class="val-row">
+          <div class="val-cell">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Integrity</span>
+          </div>
+          <div class="val-cell">
+            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <span>Efficiency</span>
+          </div>
+          <div class="val-cell">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+            <span>Innovation</span>
+          </div>
+        </div>
+      </div>
+      <div class="split-img rv-r">
+        <img src="../Aristopole Asset Library/img90.jpg" alt="Aristopole operations" loading="lazy" />
+        <div class="split-badge">
+          <strong>DRC</strong>
+          <span>Kinshasa &amp; Lubumbashi</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     SUSTAINABILITY
+════════════════════════════════════════════════ -->
+<section class="sustain" id="sustainability">
+  <div class="sus-bg"><img src="../Aristopole Asset Library/img96.jpg" alt="" loading="lazy" /></div>
+  <div class="sus-tint"></div>
+  <div class="wrap">
+    <div class="sus-inner">
+      <div class="sus-text rv">
+        <div class="sec-label">Our Commitment</div>
+        <h2 class="sus-h">Fueling sustainability<br />in Africa.</h2>
+        <p>Our commitment goes beyond commerce. We invest in sustainable practices that uplift communities, protect natural resources and foster long-term economic development across the African continent.</p>
+        <div class="sus-points">
+          <div class="sus-pt">Environmental stewardship — responsible sourcing, reduced footprint</div>
+          <div class="sus-pt">Community development — local employment, skills transfer</div>
+          <div class="sus-pt">Ethical trade — full transparency and fair-trade compliance</div>
+        </div>
+      </div>
+      <div class="sus-cards">
+        <div class="sus-card rv sus-d1">
+          <div class="sus-ico"><svg viewBox="0 0 24 24"><path d="M12 22V12M12 12C12 12 7 9 7 4a5 5 0 0 1 10 0c0 5-5 8-5 8z"/></svg></div>
+          <div>
+            <div class="sus-ct">Environmental Stewardship</div>
+            <div class="sus-cd">Responsible sourcing and minimising ecological impact across every supply chain operation.</div>
+          </div>
+        </div>
+        <div class="sus-card rv sus-d2">
+          <div class="sus-ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+          <div>
+            <div class="sus-ct">Community Development</div>
+            <div class="sus-cd">Investing in local skills, employment and economic upliftment in the communities we serve.</div>
+          </div>
+        </div>
+        <div class="sus-card rv sus-d3">
+          <div class="sus-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div>
+            <div class="sus-ct">Ethical Trade</div>
+            <div class="sus-cd">Adhering to the highest standards of compliance, transparency and fair trade across all partnerships.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     CERTIFICATIONS
+════════════════════════════════════════════════ -->
+<section class="certs">
+  <div class="wrap">
+    <div class="cert-head rv">
+      <div class="sec-label">Credentials</div>
+      <h2 class="sec-title">Registered &amp; Certified</h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card rv d1">
+        <div class="cert-ico"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <div class="cert-lbl">Registration</div>
+        <div class="cert-val">CD/KIN/RCCM/ 16-B-09599</div>
+      </div>
+      <div class="cert-card rv d2">
+        <div class="cert-ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <div class="cert-lbl">ID.NAT</div>
+        <div class="cert-val">05-F4300-N95409U</div>
+      </div>
+      <div class="cert-card rv d3">
+        <div class="cert-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
+        <div class="cert-lbl">GDI</div>
+        <div class="cert-val">A1608394S</div>
+      </div>
+      <div class="cert-card rv d4">
+        <div class="cert-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="cert-lbl">INPP</div>
+        <div class="cert-val">26350</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     CAREERS
+════════════════════════════════════════════════ -->
+<section class="careers" id="careers">
+  <div class="wrap">
+    <div class="careers-grid">
+      <div class="careers-text">
+        <div class="sec-label">Join Us</div>
+        <h2 class="sec-title rv">Build your career at<br />Aristopole Group.</h2>
+        <p class="rv car-d1">We are always looking for driven individuals who share our passion for transforming Africa's supply landscape. Join an international team that values initiative, expertise and real impact.</p>
+        <ul class="role-list">
+          <li class="role-row rv car-d2">
+            <div class="role-ico"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+            <div><div class="role-title">Operations &amp; Logistics</div><div class="role-sub">Supply chain, warehousing, forwarding &amp; customs</div></div>
+            <div class="role-arr"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          </li>
+          <li class="role-row rv car-d3">
+            <div class="role-ico"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+            <div><div class="role-title">Engineering &amp; Technical</div><div class="role-sub">Mining, industrial &amp; mechanical engineering</div></div>
+            <div class="role-arr"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          </li>
+          <li class="role-row rv car-d4">
+            <div class="role-ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <div><div class="role-title">Business Development</div><div class="role-sub">Sales, partnerships &amp; market expansion</div></div>
+            <div class="role-arr"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          </li>
+        </ul>
+      </div>
+      <div class="careers-panel rv-r">
+        <h3>Ready to make an impact?</h3>
+        <p>Send us your CV and let us know how your skills can contribute to Aristopole Group's continued growth across Africa.</p>
+        <a href="mailto:infos@aristopol.com" class="cp-btn">
+          Send your CV
+          <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </a>
+        <small>Or email us at <a href="mailto:infos@aristopol.com">infos@aristopol.com</a></small>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     CTA BAND
+════════════════════════════════════════════════ -->
+<div class="cta-band">
+  <div class="wrap">
+    <div class="cta-inner rv">
+      <div class="cta-band-text">
+        <h2 class="cta-h">Ready to partner with<br />Aristopole Group?</h2>
+        <p>Let's discuss how we can strengthen your supply chain across Africa.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="#contact" class="btn-white">
+          Request a Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;flex-shrink:0;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#about" class="btn-ghost">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="rv-l">
+        <div class="cf-head">
+          <div class="sec-label">Get in Touch</div>
+          <h2>Send us an enquiry.</h2>
+          <p>Fill in the form and our team will respond within one business day.</p>
+        </div>
+        <form class="form" id="cForm" novalidate>
+          <div class="frow">
+            <div class="fg" id="g-name">
+              <label for="f-name">Full Name</label>
+              <input type="text" id="f-name" name="name" placeholder="Your full name" />
+              <span class="ferr">Please enter your name.</span>
+            </div>
+            <div class="fg" id="g-company">
+              <label for="f-company">Company</label>
+              <input type="text" id="f-company" name="company" placeholder="Your company" />
+            </div>
+          </div>
+          <div class="frow">
+            <div class="fg" id="g-email">
+              <label for="f-email">Email Address</label>
+              <input type="email" id="f-email" name="email" placeholder="you@company.com" />
+              <span class="ferr">Please enter a valid email address.</span>
+            </div>
+            <div class="fg" id="g-phone">
+              <label for="f-phone">Phone Number</label>
+              <input type="tel" id="f-phone" name="phone" placeholder="+243 XX XXX XXXX" />
+            </div>
+          </div>
+          <div class="fg" id="g-service">
+            <label for="f-service">Service Interest</label>
+            <select id="f-service" name="service">
+              <option value="">Select a service…</option>
+              <option>Supply Chain &amp; Logistics</option>
+              <option>Mining Equipment &amp; Spares</option>
+              <option>Industrial &amp; Hydraulic Supplies</option>
+              <option>Stone Production Equipment</option>
+              <option>Petroleum Products</option>
+              <option>Aftermarket Mining Services</option>
+              <option>Other</option>
+            </select>
+            <span class="ferr">Please select a service.</span>
+          </div>
+          <div class="fg" id="g-message">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" placeholder="Tell us about your requirements…"></textarea>
+            <span class="ferr">Please enter a message.</span>
+          </div>
+          <div class="fsuccess" id="f-success" role="alert">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Thank you — your enquiry has been received. We'll be in touch shortly.
+          </div>
+          <button type="submit" class="submit-btn" id="f-submit">
+            Send enquiry
+            <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="ci-panel rv-r">
+        <h3>Contact Information</h3>
+        <p>Reach our team directly or visit us at our Kinshasa headquarters on Boulevard du 30 Juin.</p>
+        <ul class="ci-list">
+          <li class="ci-row">
+            <div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="ci-lbl">Address</div><div class="ci-val">Immeuble Equity Bank BCDC, 12ème étage<br />Boulevard du 30 Juin, Kinshasa/Gombe, RDC</div></div>
+          </li>
+          <li class="ci-row">
+            <div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.4 2 2 0 0 1 3.58 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91A16 16 0 0 0 14.09 16.09l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><div class="ci-lbl">Phone</div><div class="ci-val"><a href="tel:+243825174469">+243 82 517 4469</a></div></div>
+          </li>
+          <li class="ci-row">
+            <div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><div class="ci-lbl">Email</div><div class="ci-val"><a href="mailto:infos@aristopol.com">infos@aristopol.com</a></div></div>
+          </li>
+        </ul>
+        <div class="map-box">
+          <div class="map-inner">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <p>Kinshasa / Gombe, DRC</p>
+            <small>Boulevard du 30 Juin</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="f-brand">
+        <img src="../Aristopole Asset Library/Aristopole_ Logo_ Revamp_Color.jpg" alt="Aristopole Group" />
+        <p>Fueling sustainability through world-class supply chain, mining equipment and industrial supplies across Africa.</p>
+        <div class="f-reg">Reg: CD/KIN/RCCM/16-B-09599 | ID.NAT: 05-F4300-N95409U</div>
+        <div class="f-socials">
+          <a href="#" class="f-soc" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="f-soc" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+          <a href="#" class="f-soc" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#company">About Us</a></li>
+          <li><a href="#sustainability">Sustainability</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Supply Chain</a></li>
+          <li><a href="#services">Mining Equipment</a></li>
+          <li><a href="#services">Industrial Supplies</a></li>
+          <li><a href="#services">Stone Production</a></li>
+          <li><a href="#services">Petroleum Products</a></li>
+          <li><a href="#services">Aftermarket Services</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+243825174469">+243 82 517 4469</a></li>
+          <li><a href="mailto:infos@aristopol.com">infos@aristopol.com</a></li>
+          <li><a href="#contact">Kinshasa, DRC</a></li>
+          <li><a href="#contact">Lubumbashi, DRC</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-wordmark">
+      <img src="../Aristopole Asset Library/ARISTOPOLE TEXT DESIGN (1).jpg" alt="" loading="lazy" />
+    </div>
+
+    <div class="footer-bar">
+      <p>&copy; 2024 Aristopole Group DRC SARL. All Rights Reserved.</p>
+      <div class="footer-bar-links">
+        <a href="#home">Privacy Policy</a>
+        <a href="#home">Terms of Service</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
