@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(cp:*)",
+      "Bash(rm:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(echo:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(pip:*)",
+      "Bash(pip3:*)",
+      "Bash(node:*)",
+      "Bash(npm:*)",
+      "Bash(jq:*)",
+      "Bash(sleep:*)",
+      "Bash(chmod:*)",
+      "Write(*)",
+      "Read(*)"
+    ],
+    "deny": [
+      "Bash(rm -rf /)",
+      "Bash(sudo:*)"
+    ]
+  }
+}

@@ -508,7 +508,8 @@ section[id], div[id] { scroll-margin-top: var(--nav-h); }
 .prod-row {
   display: flex; align-items: center; gap: 12px;
   padding: 12px 14px; border-radius: 4px; background: var(--surface);
-  transition: background 0.2s, transform 0.18s; cursor: default;
+  transition: background 0.2s, transform 0.18s; cursor: pointer;
+  text-decoration: none; color: inherit;
 }
 .prod-row:hover { background: #E0F9FB; transform: translateX(3px); }
 .p-ico {
@@ -628,10 +629,9 @@ section[id], div[id] { scroll-margin-top: var(--nav-h); }
 .role-row {
   display: flex; align-items: center; gap: 14px;
   padding: 16px 0; border-bottom: 1px solid var(--border);
-  transition: padding-left 0.2s,
-              opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
               transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
-  cursor: default;
+  cursor: pointer; text-decoration: none; color: inherit;
 }
 
 /* Declared after .role-row so transition shorthand doesn't reset these */
@@ -644,7 +644,12 @@ section[id], div[id] { scroll-margin-top: var(--nav-h); }
   transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
 .role-row:first-child { border-top: 1px solid var(--border); }
-.role-row:hover { padding-left: 6px; }
+/* Content wrapper — tucks right on hover */
+.role-content {
+  display: flex; align-items: center; gap: 14px; flex: 1;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.role-row:hover .role-content { transform: translateX(5px); }
 .role-ico {
   width: 36px; height: 36px; border-radius: 4px; background: var(--surface); flex-shrink: 0;
   display: flex; align-items: center; justify-content: center; transition: background 0.2s;
@@ -654,9 +659,10 @@ section[id], div[id] { scroll-margin-top: var(--nav-h); }
 .role-row:hover .role-ico svg { stroke: var(--blue); }
 .role-title { font-size: 0.9rem; font-weight: 700; color: var(--ink); }
 .role-sub   { font-size: 0.76rem; color: var(--muted); margin-top: 2px; }
-.role-arr   { margin-left: auto; color: var(--light); transition: transform 0.2s, color 0.2s; }
-.role-row:hover .role-arr { transform: translateX(4px); color: var(--blue); }
-.role-arr svg { width: 14px; height: 14px; stroke: currentColor; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+/* Arrow — slides LEFT on hover */
+.role-arr   { color: var(--light); transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), color 0.2s; flex-shrink: 0; }
+.role-row:hover .role-arr { transform: translateX(-10px); color: var(--blue); }
+.role-arr svg { width: 20px; height: 15px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
 
 .careers-panel {
   background: var(--ink); border-radius: 8px; padding: 40px 36px;
@@ -1173,7 +1179,7 @@ section[id], div[id] { scroll-margin-top: var(--nav-h); }
   transition: background 0.2s, transform 0.2s;
   text-decoration: none;
 }
-.btn-primary:hover { background: var(--blue-dk); transform: translateY(-1px); }
+.btn-primary:hover { color: var(--white); }
 .btn-primary:disabled { opacity: 0.6; cursor: default; transform: none; }
 
 
