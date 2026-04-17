@@ -662,13 +662,30 @@
             <label for="f-service">Service Interest</label>
             <select id="f-service" name="service">
               <option value="">Select a service…</option>
-              <option>Supply Chain &amp; Logistics</option>
-              <option>Mining Equipment &amp; Spares</option>
-              <option>Industrial &amp; Hydraulic Supplies</option>
-              <option>Stone Production Equipment</option>
-              <option>Petroleum Products</option>
-              <option>Aftermarket Mining Services</option>
-              <option>Other</option>
+              <optgroup label="Supply Chain &amp; Industrial">
+                <option value="supply-chain">Supply Chain &amp; Logistics</option>
+                <option value="mining-equipment">Mining Equipment &amp; Spares</option>
+                <option value="industrial-supplies">Industrial &amp; Hydraulic Supplies</option>
+                <option value="stone-production">Stone Production Equipment</option>
+                <option value="petroleum">Petroleum Products</option>
+                <option value="aftermarket">Aftermarket Mining Services</option>
+              </optgroup>
+              <optgroup label="Energy &amp; Power">
+                <option value="hydroelectric">Hydroelectric Projects</option>
+                <option value="solar">Solar &amp; Renewable Projects</option>
+                <option value="epc-power">EPC Power Plants &amp; Substations</option>
+              </optgroup>
+              <optgroup label="Infrastructure">
+                <option value="roads">Roads &amp; Highways</option>
+                <option value="ports">Ports &amp; Facilities</option>
+                <option value="bridges">Bridges &amp; Water Infrastructure</option>
+              </optgroup>
+              <optgroup label="Financial Advisory">
+                <option value="project-finance">Project Finance</option>
+                <option value="corporate-finance">Corporate Finance</option>
+                <option value="advisory">Advisory &amp; PPP Facilitation</option>
+              </optgroup>
+              <option value="other">Other / General Enquiry</option>
             </select>
             <span class="ferr">Please select a service.</span>
           </div>
@@ -679,7 +696,7 @@
           </div>
           <div class="fsuccess" id="f-success" role="alert">
             <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Thank you — your enquiry has been received. We'll be in touch shortly.
+            Thank you — we'll be in touch within one business day.
           </div>
           <button type="submit" class="submit-btn" id="f-submit">
             Send enquiry
