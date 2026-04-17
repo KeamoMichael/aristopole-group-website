@@ -104,7 +104,7 @@ if (statsBlock) {
 /* ─── Form submission via Web3Forms ─────────────────────── */
 /* 1. Go to web3forms.com, enter info@aristopole.net, get access key
    2. Replace the value below with your key                       */
-const WEB3FORMS_KEY = 'REPLACE_WITH_YOUR_WEB3FORMS_ACCESS_KEY';
+const WEB3FORMS_KEY = '79def2ef-3416-4276-b336-a7bbdc4b0e31';
 
 const form    = document.getElementById('cForm');
 const submit  = document.getElementById('f-submit');
