@@ -83,42 +83,59 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
             <div class="f-group" id="g-name">
               <label class="f-lbl" for="f-name">Full Name <span class="f-req">*</span></label>
-              <input class="f-inp" id="f-name" type="text" placeholder="Your full name" autocomplete="name" />
+              <input class="f-inp" id="f-name" name="name" type="text" placeholder="Your full name" autocomplete="name" />
               <div class="f-err">Please enter your name</div>
             </div>
             <div class="f-group" id="g-company">
               <label class="f-lbl" for="f-company">Company</label>
-              <input class="f-inp" id="f-company" type="text" placeholder="Your company" autocomplete="organization" />
+              <input class="f-inp" id="f-company" name="company" type="text" placeholder="Your company" autocomplete="organization" />
             </div>
           </div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
             <div class="f-group" id="g-email">
               <label class="f-lbl" for="f-email">Email Address <span class="f-req">*</span></label>
-              <input class="f-inp" id="f-email" type="email" placeholder="you@company.com" autocomplete="email" />
+              <input class="f-inp" id="f-email" name="email" type="email" placeholder="you@company.com" autocomplete="email" />
               <div class="f-err">Please enter a valid email address</div>
             </div>
             <div class="f-group" id="g-phone">
               <label class="f-lbl" for="f-phone">Phone Number</label>
-              <input class="f-inp" id="f-phone" type="tel" placeholder="+243 xx xxx xxxx" autocomplete="tel" />
+              <input class="f-inp" id="f-phone" name="phone" type="tel" placeholder="+243 xx xxx xxxx" autocomplete="tel" />
             </div>
           </div>
           <div class="f-group" id="g-service" style="margin-bottom:16px;">
             <label class="f-lbl" for="f-service">Service Interest <span class="f-req">*</span></label>
-            <select class="f-inp" id="f-service">
+            <select class="f-inp" id="f-service" name="service">
               <option value="">Select a service</option>
-              <option value="supply-chain">Supply Chain Logistics</option>
-              <option value="mining-equipment">Mining Equipment &amp; Spares</option>
-              <option value="industrial-supplies">Industrial &amp; Hydraulic Supplies</option>
-              <option value="stone-production">Stone Production Equipment</option>
-              <option value="petroleum">Petroleum Products</option>
-              <option value="aftermarket">Aftermarket Mining Services</option>
+              <optgroup label="Aristopole Mining">
+                <option value="supply-chain">Supply Chain Logistics</option>
+                <option value="mining-equipment">Mining Equipment &amp; Spares</option>
+                <option value="industrial-supplies">Industrial &amp; Hydraulic Supplies</option>
+                <option value="stone-production">Stone Production Equipment</option>
+                <option value="petroleum">Petroleum Products</option>
+                <option value="aftermarket">Aftermarket Mining Services</option>
+              </optgroup>
+              <optgroup label="Aristopole Energie">
+                <option value="hydroelectric">Hydroelectric Projects</option>
+                <option value="solar">Solar &amp; Renewable Projects</option>
+                <option value="epc-power">EPC Power Plants &amp; Substations</option>
+              </optgroup>
+              <optgroup label="Aristopole Infrastructures">
+                <option value="roads">Roads &amp; Highways</option>
+                <option value="ports">Ports &amp; Facilities</option>
+                <option value="bridges">Bridges &amp; Water Infrastructure</option>
+              </optgroup>
+              <optgroup label="Aristopole Finances">
+                <option value="project-finance">Project Finance</option>
+                <option value="corporate-finance">Corporate Finance</option>
+                <option value="advisory">Advisory &amp; PPP Facilitation</option>
+              </optgroup>
               <option value="other">Other / General Enquiry</option>
             </select>
             <div class="f-err">Please select a service</div>
           </div>
           <div class="f-group" id="g-message" style="margin-bottom:24px;">
             <label class="f-lbl" for="f-message">Message <span class="f-req">*</span></label>
-            <textarea class="f-inp" id="f-message" rows="5" placeholder="Tell us about your requirements…"></textarea>
+            <textarea class="f-inp" id="f-message" name="message" rows="5" placeholder="Tell us about your requirements…"></textarea>
             <div class="f-err">Please enter your message</div>
           </div>
           <button class="btn-primary" type="submit" id="f-submit" style="width:100%;justify-content:center;">
@@ -156,7 +173,7 @@
             </div>
             <div class="office-info-row">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <a href="mailto:infos@aristopol.com">infos@aristopol.com</a>
+              <a href="mailto:info@aristopole.net">info@aristopole.net</a>
             </div>
           </div>
           <!-- Google Maps — Kinshasa -->
@@ -186,7 +203,7 @@
             </div>
             <div class="office-info-row">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <a href="mailto:infos@aristopol.com">infos@aristopol.com</a>
+              <a href="mailto:info@aristopole.net">info@aristopole.net</a>
             </div>
           </div>
           <!-- Google Maps — Lubumbashi -->
@@ -198,6 +215,51 @@
             </iframe>
           </div>
         </div>
+
+        <!-- Kolwezi Warehousing Hub -->
+        <div class="office-card" style="margin-top:20px;">
+          <div class="office-card-header">
+            <div class="office-card-dot" style="background:var(--blue);opacity:0.6;"></div>
+            <div class="office-card-city">Kolwezi <span>— Warehousing Hub</span></div>
+          </div>
+          <div class="office-card-body">
+            <div class="office-info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>Kolwezi, Lualaba Province<br />Democratic Republic of Congo</div>
+            </div>
+            <div class="office-info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              <div>Strategic warehousing &amp; cross-docking hub for Lualaba Province mining operations</div>
+            </div>
+            <div class="office-info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:info@aristopole.net">info@aristopole.net</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Goma Warehousing Hub -->
+        <div class="office-card" style="margin-top:20px;">
+          <div class="office-card-header">
+            <div class="office-card-dot" style="background:var(--blue);opacity:0.6;"></div>
+            <div class="office-card-city">Goma <span>— Warehousing Hub</span></div>
+          </div>
+          <div class="office-card-body">
+            <div class="office-info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>Goma, Nord-Kivu Province<br />Democratic Republic of Congo</div>
+            </div>
+            <div class="office-info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              <div>Strategic warehousing &amp; cross-docking hub serving eastern DRC operations</div>
+            </div>
+            <div class="office-info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:info@aristopole.net">info@aristopole.net</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -219,7 +281,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </div>
         <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Email</div>
-        <a href="mailto:infos@aristopol.com" style="font-size:0.88rem;font-weight:700;color:var(--ink);text-decoration:none;">infos@aristopol.com</a>
+        <a href="mailto:info@aristopole.net" style="font-size:0.88rem;font-weight:700;color:var(--ink);text-decoration:none;">info@aristopole.net</a>
       </div>
       <div class="rv d3" style="padding:28px 24px;border:1px solid var(--border);border-radius:8px;background:var(--white);text-align:center;">
         <div style="width:44px;height:44px;border-radius:8px;background:#E6F9FB;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
@@ -232,8 +294,8 @@
         <div style="width:44px;height:44px;border-radius:8px;background:#E6F9FB;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
         </div>
-        <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Offices</div>
-        <div style="font-size:0.88rem;font-weight:700;color:var(--ink);">Kinshasa &amp; Lubumbashi</div>
+        <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Locations</div>
+        <div style="font-size:0.88rem;font-weight:700;color:var(--ink);">Kinshasa, Lubumbashi, Kolwezi &amp; Goma</div>
       </div>
     </div>
   </div>
@@ -254,7 +316,7 @@
       </div>
       <div class="f-col"><h4>Company</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="sustainability.html">Sustainability</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div class="f-col"><h4>Services</h4><ul><li><a href="services.html">Supply Chain</a></li><li><a href="services.html">Mining Equipment</a></li><li><a href="services.html">Industrial Supplies</a></li><li><a href="services.html">Stone Production</a></li><li><a href="services.html">Petroleum Products</a></li></ul></div>
-      <div class="f-col"><h4>Contact</h4><ul><li><a href="tel:+243825174469">+243 82 517 4469</a></li><li><a href="mailto:infos@aristopol.com">infos@aristopol.com</a></li><li><a href="contact.html">Kinshasa, DRC</a></li><li><a href="contact.html">Lubumbashi, DRC</a></li></ul></div>
+      <div class="f-col"><h4>Contact</h4><ul><li><a href="tel:+243825174469">+243 82 517 4469</a></li><li><a href="mailto:info@aristopole.net">info@aristopole.net</a></li><li><a href="contact.html">Kinshasa, DRC</a></li><li><a href="contact.html">Lubumbashi, DRC</a></li></ul></div>
     </div>
 
     <div class="footer-bar">

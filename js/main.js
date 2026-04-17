@@ -101,7 +101,11 @@ if (statsBlock) {
   so.observe(statsBlock);
 }
 
-/* ─── Form validation ────────────────────────────────────── */
+/* ─── Form submission via Web3Forms ─────────────────────── */
+/* 1. Go to web3forms.com, enter info@aristopole.net, get access key
+   2. Replace the value below with your key                       */
+const WEB3FORMS_KEY = 'REPLACE_WITH_YOUR_WEB3FORMS_ACCESS_KEY';
+
 const form    = document.getElementById('cForm');
 const submit  = document.getElementById('f-submit');
 const success = document.getElementById('f-success');
@@ -123,29 +127,53 @@ function check({ id, gid, test }) {
 }
 
 rules.forEach(r => {
-  document.getElementById(r.id).addEventListener('blur', () => check(r));
+  const el = document.getElementById(r.id);
+  if (el) el.addEventListener('blur', () => check(r));
 });
 
+const submitLabel = `Send Enquiry <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;flex-shrink:0;"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>`;
+
 if (form) {
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
+
     const allOk = rules.every(r => check(r));
     if (!allOk) {
-      form.querySelector('.err')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      form.querySelector('.err, .has-err input, .has-err select, .has-err textarea')
+        ?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       return;
     }
 
     submit.disabled = true;
     submit.textContent = 'Sending…';
 
-    setTimeout(() => {
-      form.reset();
+    try {
+      const formData = new FormData(form);
+      formData.append('access_key', WEB3FORMS_KEY);
+      formData.append('subject',    'New Enquiry — Aristopole Group Website');
+      formData.append('from_name',  'Aristopole Group Website');
+
+      const res  = await fetch('https://api.web3forms.com/submit', {
+        method:  'POST',
+        body:    formData,
+        headers: { 'Accept': 'application/json' },
+      });
+      const data = await res.json();
+
+      if (data.success) {
+        form.reset();
+        success.classList.add('show');
+        success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        setTimeout(() => success.classList.remove('show'), 7000);
+      } else {
+        alert(`Could not send your message: ${data.message || 'Submission failed.'}\n\nPlease email us directly at info@aristopole.net`);
+      }
+    } catch {
+      alert('Network error — please check your connection or email us directly at info@aristopole.net');
+    } finally {
       submit.disabled = false;
-      submit.innerHTML = `Send enquiry <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;flex-shrink:0;"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>`;
-      success.classList.add('show');
-      success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      setTimeout(() => success.classList.remove('show'), 6000);
-    }, 1200);
+      submit.innerHTML = submitLabel;
+    }
   });
 }
 
